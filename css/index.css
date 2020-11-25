@@ -169,3 +169,25 @@ a:hover {
      font-family:'Poppins', sans-serif;
      font-size: 12pt;
  }
+
+ @media only screen and (max-width: 600px) {
+     .flex-container {
+        display: flex;
+        flex-direction: column wrap;
+        align-items: stretch;
+    }
+   
+    .flex-container > div {
+        width: 100%;
+        padding: 15px;
+    }
+   
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+         "left-side"
+         "right-side";
+    }
+ }

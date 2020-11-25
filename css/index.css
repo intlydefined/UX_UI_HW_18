@@ -3,6 +3,21 @@ body {
     cursor: url('../images/sh-portfolio.cur'), auto;
 }
 
+h1{ 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40pt; 
+}
+
+h2 {
+   font-family: 'Bebas Neue', cursive;
+   font-size: 25pt;
+}
+
+h3 {
+   font-family:'Poppins', sans-serif;
+   font-size: 15pt;
+}
+
 p { 
     font-family:'Poppins', sans-serif;
     font-size: 12pt;
@@ -48,6 +63,50 @@ a:hover {
      z-index: -10;
  }
 
+ .skills {
+    margin: 30px;
+ }
+
+ .case-studies {
+     margin: 30px;
+ }
+
+ .flex-container {
+     display: flex;
+     flex-direction: row wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .flex-container > div {
+     width: 25%;
+     padding: 15px;
+ }
+
+ .grid-container {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 1fr;
+     grid-template-areas: "left-side right-side";
+ }
+
+ .left-side {
+     grid-area: "left-side";
+ }
+
+ .right-side {
+     grid-area: "right-side";
+ }
+
+ .left-side > .image, .right-side > .image {
+     background-color: gray;
+     height: 100px;
+ }
+
+ .yellow-bg {
+    background-color: #FFE600;
+ }
+
  .contact {
      position: absolute; 
      bottom: 0; 
@@ -68,16 +127,6 @@ a:hover {
 
  .contact > .info > p{
      margin: 0;
- }
-
- h1{ 
-     font-family: 'Bebas Neue', cursive;
-     font-size: 40pt; 
- }
-
- h2 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 25pt;
  }
 
  .picture>img{ 
@@ -105,6 +154,10 @@ a:hover {
      margin: 10px;
      text-decoration: none;
      border-bottom: 3px solid #FFE600;
+ }
+
+ .yellow-bg #webpages > a {
+     border-bottom: 3px solid white;
  }
 
  #webpages > a:hover {
